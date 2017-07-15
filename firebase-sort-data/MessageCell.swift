@@ -12,9 +12,16 @@ class MessageCell: UITableViewCell {
 	
 	// IBOutlets 
 	@IBOutlet weak var msgTextLabel: UILabel!
+	
+	var msg: Message!
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+	
+	func configureCell(msg: Message) {
+		self.msg = msg
+		self.msgTextLabel.text = msg.msgText
+	}
 
 }

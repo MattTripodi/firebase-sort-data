@@ -15,6 +15,8 @@
 		EEB76B181F1AA6F60093FE3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB76B161F1AA6F60093FE3D /* LaunchScreen.storyboard */; };
 		EEB76B201F1AA9EB0093FE3D /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB76B1F1F1AA9EB0093FE3D /* MessageCell.swift */; };
 		EEB76B221F1AAAE90093FE3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEB76B211F1AAAE90093FE3D /* GoogleService-Info.plist */; };
+		EEB76B271F1AC2700093FE3D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB76B261F1AC2700093FE3D /* Message.swift */; };
+		EEB76B291F1AC31F0093FE3D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB76B281F1AC31F0093FE3D /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EEB76B191F1AA6F60093FE3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB76B1F1F1AA9EB0093FE3D /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		EEB76B211F1AAAE90093FE3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEB76B261F1AC2700093FE3D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EEB76B281F1AC31F0093FE3D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,16 +86,42 @@
 		EEB76B0C1F1AA6F50093FE3D /* firebase-sort-data */ = {
 			isa = PBXGroup;
 			children = (
-				EEB76B0D1F1AA6F50093FE3D /* AppDelegate.swift */,
-				EEB76B0F1F1AA6F50093FE3D /* ViewController.swift */,
+				EEB76B251F1AC21E0093FE3D /* Model */,
+				EEB76B241F1AC2190093FE3D /* View */,
+				EEB76B231F1AC20A0093FE3D /* Controller */,
 				EEB76B111F1AA6F60093FE3D /* Main.storyboard */,
 				EEB76B141F1AA6F60093FE3D /* Assets.xcassets */,
 				EEB76B161F1AA6F60093FE3D /* LaunchScreen.storyboard */,
 				EEB76B191F1AA6F60093FE3D /* Info.plist */,
 				EEB76B211F1AAAE90093FE3D /* GoogleService-Info.plist */,
-				EEB76B1F1F1AA9EB0093FE3D /* MessageCell.swift */,
+				EEB76B281F1AC31F0093FE3D /* DataService.swift */,
 			);
 			path = "firebase-sort-data";
+			sourceTree = "<group>";
+		};
+		EEB76B231F1AC20A0093FE3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEB76B0F1F1AA6F50093FE3D /* ViewController.swift */,
+				EEB76B0D1F1AA6F50093FE3D /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EEB76B241F1AC2190093FE3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEB76B1F1F1AA9EB0093FE3D /* MessageCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EEB76B251F1AC21E0093FE3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEB76B261F1AC2700093FE3D /* Message.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB76B101F1AA6F50093FE3D /* ViewController.swift in Sources */,
+				EEB76B271F1AC2700093FE3D /* Message.swift in Sources */,
 				EEB76B0E1F1AA6F50093FE3D /* AppDelegate.swift in Sources */,
 				EEB76B201F1AA9EB0093FE3D /* MessageCell.swift in Sources */,
+				EEB76B291F1AC31F0093FE3D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +421,7 @@
 				EEB76B1E1F1AA6F60093FE3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

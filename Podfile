@@ -7,5 +7,6 @@ target 'firebase-sort-data' do
 
   # Pods for firebase-sort-data
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end
